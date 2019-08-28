@@ -16,12 +16,12 @@ class App < Sinatra::Base
       "#{@val}"
     end
 
-    get "/square/:num" do
+    get "/say/:number/:phrase" do
       # @user_name = params[:name]
       # "Goodbye, #{@user_name}."
       @val = power(params[:name].to_i, 2)
       "#{@val}"
-    end    
+    end
 
     get "/multiply/:num1/:num2" do
       @num1 = params[:num1].to_i
