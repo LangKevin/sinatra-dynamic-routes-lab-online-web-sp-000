@@ -13,7 +13,7 @@ class App < Sinatra::Base
       # @user_name = params[:name]
       # "Goodbye, #{@user_name}."
       @val = power(params[:name].to_i, 2)
-
+      "#{@name}"
     end
 
     get "/multiply/:num1/:num2" do
