@@ -6,14 +6,15 @@ class App < Sinatra::Base
       # @user_name = params[:name]
       # "Goodbye, #{@user_name}."
       @name = params[:name].reverse
-      "#{@name}"
+      # "#{@name}"
     end
 
     get "/square/:num" do
       # @user_name = params[:name]
       # "Goodbye, #{@user_name}."
-      @val = power(params[:name].to_i, 2)
-      "#{@val}"
+      val = power(params[:name].to_i, 2)
+      val.to_s
+      # "#{@val}"
     end
 
     get "/say/:number/:phrase" do
