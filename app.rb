@@ -12,7 +12,7 @@ class App < Sinatra::Base
     get "/square/:num" do
       # @user_name = params[:name]
       # "Goodbye, #{@user_name}."
-      val = power(params[:name].to_i, 2)
+      val = params[:name].to_i * 2
       val.to_s
       # "#{@val}"
     end
