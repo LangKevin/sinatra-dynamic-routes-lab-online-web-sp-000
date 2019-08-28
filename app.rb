@@ -37,7 +37,7 @@ class App < Sinatra::Base
         when 'divide'
           tot = val1 / val2
         end
-        "#{tot.to_s}"
+        tot.to_s
       end
 
     get "/multiply/:num1/:num2" do
