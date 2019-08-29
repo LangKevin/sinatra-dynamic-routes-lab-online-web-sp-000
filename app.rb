@@ -26,6 +26,7 @@ class App < Sinatra::Base
       end
       result
  binding.pry
+ # result.scan('show me the money').size return the correct val in the .pry not sure why test failed.  Had this happen before where support tech couldnt figure out
     end
 
     get '/say/:word1/:word2/:word3/:word4/:word5' do
