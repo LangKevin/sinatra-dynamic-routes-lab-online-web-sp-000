@@ -20,7 +20,7 @@ class App < Sinatra::Base
 
       val = params[:number].to_i
       str = params[:phrase]
-      result = ""
+      result = ''
       val.times do
         result += str
       end
