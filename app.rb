@@ -20,11 +20,11 @@ class App < Sinatra::Base
 
       val = params[:number].to_i
       str = params[:phrase]
-      result = ''
+      answer = ''
       val.times do
-        result += str
+        answer += str
       end
-      result
+      answer
  binding.pry
     end
 
