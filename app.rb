@@ -22,7 +22,7 @@ class App < Sinatra::Base
       str = params[:phrase]
       result = ''
       val.times do
-        answer += str
+        result += str
       end
       result
  binding.pry
