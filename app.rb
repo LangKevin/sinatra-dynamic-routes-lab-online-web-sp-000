@@ -24,6 +24,7 @@ class App < Sinatra::Base
       val.times do
         result += str
       end
+      result
  binding.pry
     end
 
